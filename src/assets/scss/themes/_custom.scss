@@ -1,0 +1,116 @@
+.pcoded-navbar:not(.theme-horizontal) .navbar-content {
+  height: calc(100% - 70px);
+}
+
+.card {
+  .card-header + .collapse{
+    >.card-body{
+      padding-top: 0;
+    }
+  }
+}
+
+.pcoded-navbar{
+  .pcoded-inner-navbar {
+    li {
+      > a.active {
+        color: #e5efff;
+        /*font-weight: 600;*/
+      }
+
+
+      .pcoded-submenu > li {
+        &.active,
+        &:focus,
+        &:hover {
+          > a ,
+          > a.active {
+            &:before {
+              background: #e5efff;
+            }
+          }
+        }
+        > a.active {
+          &:before {
+            background: #e5efff;
+          }
+        }
+      }
+    }
+
+    > li {
+      &.active,
+      &.pcoded-trigger {
+        > a,
+        > a.active {
+          color: #e5efff;
+        }
+      }
+
+    }
+
+    > .pcoded-menu-caption {
+      &.active,
+      &.pcoded-trigger {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  &.menu-light{
+    .pcoded-inner-navbar {
+      li {
+        > a.active{
+          color: $primary-color;
+          background: transparent;
+          &:before{
+            background: $primary-color;
+          }
+        }
+
+        .pcoded-submenu > li {
+
+          > a.active {
+            &:before {
+              background: $primary-color;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
+.search-bar {
+  display: block;
+}
+
+table.dataTable.table-condensed .sorting:after, table.dataTable.table-condensed .sorting_asc:after, table.dataTable.table-condensed .sorting_desc:after{
+  top: 16px;
+}
+table.dataTable thead .sorting:after, table.dataTable thead .sorting_asc:after, table.dataTable thead .sorting_desc:after, table.dataTable thead .sorting_asc_disabled:after, table.dataTable thead .sorting_desc_disabled:after{
+  font-family: feather !important;
+  content: "\e82a";
+}
+table.dataTable thead .sorting_asc:after{
+  content: "\e82d";
+}
+table.dataTable thead .sorting_desc:after{
+  content: "\e82a";
+}
+
+.css-1bm1z97-ToastContainer {
+  top: 70px !important;
+  .alert-inverse .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.pcoded-navbar.menu-light.theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu.active:before, .pcoded-navbar.menu-light.theme-horizontal .pcoded-inner-navbar > li.pcoded-hasmenu.pcoded-trigger:before{
+  color: transparent;
+  text-shadow: none;
+ }
