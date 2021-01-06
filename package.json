@@ -16,7 +16,7 @@
     "@fullcalendar/timegrid": "^4.3.0",
     "apexcharts": "^3.10.1",
     "aphrodite": "^2.4.0",
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.3.1",
     "chart.js": "^2.9.2",
     "chroma-js": "^2.1.0",
